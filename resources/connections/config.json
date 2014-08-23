@@ -1,0 +1,69 @@
+{
+	"type": "Collection",
+	"properties": {
+		"team": {
+			"name": "team",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "team",
+			"order": 0
+		},
+		"startTime": {
+			"name": "startTime",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "startTime",
+			"order": 1
+		},
+		"endTime": {
+			"name": "endTime",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "endTime",
+			"order": 2
+		},
+		"startQ": {
+			"name": "startQ",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "startQ",
+			"order": 3
+		},
+		"startR": {
+			"name": "startR",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "startR",
+			"order": 4
+		},
+		"endQ": {
+			"name": "endQ",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "endQ",
+			"order": 5
+		},
+		"endR": {
+			"name": "endR",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "endR",
+			"order": 6
+		},
+		"route": {
+			"name": "route",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "route",
+			"order": 7
+		}
+	}
+}

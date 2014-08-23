@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"q": {
+			"name": "q",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "q",
+			"order": 0
+		},
+		"r": {
+			"name": "r",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "r",
+			"order": 1
+		},
+		"type": {
+			"name": "type",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "type",
+			"order": 2
+		},
+		"owner": {
+			"name": "owner",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "owner",
+			"order": 3
+		},
+		"whenAvailableForUse": {
+			"name": "whenAvailableForUse",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "whenAvailableForUse",
+			"order": 4
+		}
+	}
+}

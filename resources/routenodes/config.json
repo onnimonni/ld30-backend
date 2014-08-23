@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"connection": {
+			"name": "connection",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "connection",
+			"order": 0
+		},
+		"q": {
+			"name": "q",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "q",
+			"order": 1
+		},
+		"r": {
+			"name": "r",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "r",
+			"order": 2
+		}
+	}
+}

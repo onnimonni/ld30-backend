@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"startTime": {
+			"name": "startTime",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "startTime",
+			"order": 0
+		},
+		"endTime": {
+			"name": "endTime",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "endTime",
+			"order": 1
+		},
+		"qMin": {
+			"name": "qMin",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "qMin",
+			"order": 2
+		},
+		"qMax": {
+			"name": "qMax",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "qMax",
+			"order": 3
+		},
+		"rMin": {
+			"name": "rMin",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "rMin",
+			"order": 4
+		},
+		"rMax": {
+			"name": "rMax",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "rMax",
+			"order": 5
+		}
+	}
+}

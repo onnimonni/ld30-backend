@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deployd Todos</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <style type="text/css">
+    #chatbox {
+      margin-top: 20px;
+      padding: 10px;
+      height: 300px;
+      border: 1px #CCCCCC solid;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hexgame logs</h1>
+    <ul id="chatbox" class="unstyled">
+
+    </ul>
+    <form class="form-inline">
+      <h2>Create new hex!</h2>
+      <input type="text" class="input-large" id="type" placeholder="Hex type" />
+      <input type="number" class="input-small" placeholder="0" id="qCoordinate" />
+      <input type="number" class="input-small" placeholder="0" id="rCoordinate" />
+      <button id="send-btn" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+
+  <script type="text/javascript" src="/js/lib/jquery.js"></script>
+  <script type="text/javascript" src="/dpd.js"></script>
+  <script type="text/javascript" src="/js/chatroom.js"></script>
+</body>
+</html>

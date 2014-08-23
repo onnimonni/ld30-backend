@@ -1,0 +1,5 @@
+Voit testaa uuden reitin luomista:
+dpd.connections.post({team: "a8b12c8306a96873",startQ: -10, startR: -10, route: [{q: -9,r: -10},{q: -9, r: -9}], endQ:-9, endR: -8}, function(connections,err) {
+  console.log(connections);
+  console.log(err);
+});
