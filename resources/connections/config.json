@@ -5,7 +5,7 @@
 			"name": "team",
 			"type": "string",
 			"typeLabel": "string",
-			"required": true,
+			"required": false,
 			"id": "team",
 			"order": 0
 		},

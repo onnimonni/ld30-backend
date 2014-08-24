@@ -1,0 +1,1 @@
+this.startTime = this.startTime || Date.now();

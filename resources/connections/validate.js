@@ -1,6 +1,10 @@
-console.log("Route has these points");
-var i = 0;
-this.route.forEach(function(hex) {
-    console.log("In index ["+i+"] is point.q:"+hex.q+" point.r"+hex.r);
-    ++i;
+//Remove all old connections
+dpd.connections.get({endTime: {$lte: Date.now()}},function(result,err){
+    if(err) return console.log(err);
+    result.forEach(function(entry) {
+        emit('connection:delete',entry);
+        dpd.connections.del(entry.id,function(){
+            if(err) return console.log(err);
+        });
+    });
 });
