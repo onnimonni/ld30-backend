@@ -56,6 +56,27 @@ function generateRandomHex(qMin,rMin,qMax,rMax,owner) {
     });
 }
 
+var _this = this;
+console.log("Creating inital settings for teams.");
+//Generate team start bases and reset money
+dpd.teams.get(function(teams,err) {
+    console.log("Looping teams:");
+    console.log(_this);
+    console.log("query params (_this):");
+    teams.forEach(function(team){
+        console.log("trying this team:");
+        console.log(team);
+        generateRandomHex(_this.qMin,_this.rMin,_this.qMax,_this.rMax,team.id);
+        //Reset Team score and create one base
+        dpd.teams.put(team.id,{resources: 10000},function(team,err){
+            
+            if(err) return console.log(err);
+            console.log("changed resources to 10000 for team:"+team.id);
+            console.log(team);
+        });
+    });
+});
+
 //Generate neutral hexes
 console.log("Generating neutral hexes:");
 var area = (this.qMax - this.qMin)*(this.rMax - this.rMin);
@@ -66,20 +87,4 @@ for (i = 0; i < serverAmount; i++) {
     console.log("Looping neutrals:");
     generateRandomHex(this.qMin,this.rMin,this.qMax,this.rMax);
 }
-var _this = this;
-//Generate team start bases and reset money
-dpd.teams.get(function(teams,err) {
-    console.log("Looping teams:");
-    console.log("query params (_this):");
-    console.log(_this);
-    teams.forEach(function(team){
-        console.log(team);
-        
-        //Reset Team score and create one base
-        dpd.teams.put(team.id,{resources: 10000},function(team,err){
-            if(err) return console.log(err);
-            generateRandomHex(_this.qMin,_this.rMin,_this.qMax,_this.rMax,team.id);
-        });
-    });
-});
 emit('game:start',this);
