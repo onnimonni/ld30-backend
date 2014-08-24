@@ -23,3 +23,4 @@ this.route.forEach(function(point) {
         }
     });
 });
+emit('connection:create',this);

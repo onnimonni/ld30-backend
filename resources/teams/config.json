@@ -16,6 +16,14 @@
 			"required": false,
 			"id": "resources",
 			"order": 1
+		},
+		"color": {
+			"name": "color",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "color",
+			"order": 2
 		}
 	}
 }

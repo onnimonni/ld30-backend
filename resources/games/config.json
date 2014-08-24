@@ -5,7 +5,7 @@
 			"name": "startTime",
 			"type": "number",
 			"typeLabel": "number",
-			"required": true,
+			"required": false,
 			"id": "startTime",
 			"order": 0
 		},
@@ -48,6 +48,14 @@
 			"required": true,
 			"id": "rMax",
 			"order": 5
+		},
+		"winnerTeamID": {
+			"name": "winnerTeamID",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "winnerTeamID",
+			"order": 6
 		}
 	}
 }

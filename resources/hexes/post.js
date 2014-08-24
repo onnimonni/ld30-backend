@@ -3,7 +3,7 @@ dpd.hexes.get({q: this.q, r: this.r}, function(hexes){
     if ( hexes.length === 0 ) {
         logger("Created new hex:");
         console.log(this);
-        emit('create',this);
+        emit('hex:create',this);
     } else {
         error('q', "Block already exists");
     }
